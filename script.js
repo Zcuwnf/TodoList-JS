@@ -276,16 +276,7 @@ todoController.prototype = {
     while (todoListView.hasChildNodes()) {
       todoListView.removeChild(todoListView.firstChild);
     }
-
   },
-};
-
-function changeClass(elem) {
-  let a = document.getElementsByTagName('a');
-  for (let i = 0; i < a.length; i++) {
-    a[i].classList.remove('selected');
-  };
-  elem.classList.add('selected');
 };
 
 let Controller = new todoController();
